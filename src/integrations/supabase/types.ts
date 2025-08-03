@@ -68,6 +68,60 @@ export type Database = {
         }
         Relationships: []
       }
+      posts: {
+        Row: {
+          author: string
+          category: string
+          comments_count: number
+          content: string
+          created_at: string
+          funding_stage: string | null
+          id: number
+          image_url: string | null
+          location: string | null
+          revenue: string | null
+          tags: string | null
+          title: string
+          upvotes: number
+          views: number
+          website: string | null
+        }
+        Insert: {
+          author?: string
+          category?: string
+          comments_count?: number
+          content?: string
+          created_at?: string
+          funding_stage?: string | null
+          id?: number
+          image_url?: string | null
+          location?: string | null
+          revenue?: string | null
+          tags?: string | null
+          title?: string
+          upvotes?: number
+          views?: number
+          website?: string | null
+        }
+        Update: {
+          author?: string
+          category?: string
+          comments_count?: number
+          content?: string
+          created_at?: string
+          funding_stage?: string | null
+          id?: number
+          image_url?: string | null
+          location?: string | null
+          revenue?: string | null
+          tags?: string | null
+          title?: string
+          upvotes?: number
+          views?: number
+          website?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
